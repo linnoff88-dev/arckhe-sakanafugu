@@ -46,7 +46,7 @@
     "tracks": [
       { "n": "1", "title": "Fundamentos", "modules": [
         { "id": "1-1", "title": "O que é orquestrar várias LLMs", "topics": 6, "href": "curso/trilha1/modulo-1-1.html" },
-        { "id": "1-2", "title": "O espectro: da mão ao modelo-maestro", "topics": 6, "href": "curso/trilha1/modulo-1-2.html" }
+        { "id": "1-2", "title": "O espectro: da mêo ao modelo-maestro", "topics": 6, "href": "curso/trilha1/modulo-1-2.html" }
       ]},
       { "n": "2", "title": "Fugu Ultra", "modules": [
         { "id": "2-1", "title": "Como o Fugu funciona", "topics": 6, "href": "curso/trilha2/modulo-2-1.html" },
@@ -541,7 +541,7 @@
 <div class="inema-prose">
 <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-2-t6-p1">The verdict isn’t “orchestrators are bad” — it’s “use the right criteria.” The field test proposes a <strong class="text-blue-400">decision ladder</strong>: a ladder of 3 questions that tells you, for each task, whether the orchestrator earns its place or whether a single strong model is the best buy.</p>
 </div>
-<!-- SVG: ladder de decisão (fluxo) -->
+<!-- SVG: ladder de decisêo (fluxo) -->
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="Decision ladder flow: if one strong model already solves it, use 1 model; otherwise, if you don’t need 1 endpoint plus a hedge, still use 1 model; only then does the orchestrator earn its place" class="w-full h-auto" role="img" viewbox="0 0 1000 260">
 <defs>
@@ -557,13 +557,13 @@
 <path d="M165,95 L165,200 L380,200" marker-end="url(#m22t6-ah)"></path>
 <path d="M540,95 L540,200" stroke-dasharray="4 4"></path>
 </g>
-<!-- decisão 1 -->
+<!-- decisêo 1 -->
 <g filter="url(#m22t6-glow)"><rect fill="#0e1622" height="70" rx="14" stroke="url(#m22t6-grad)" stroke-width="2.5" width="210" x="40" y="60"></rect></g>
 <text fill="#60a5fa" font-family="Inter,sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="145" y="88">1 strong model</text>
 <text fill="#bcd6ff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="145" y="108">does it already solve it?</text>
 <!-- saída SIM -> 1 modelo -->
 <g><rect fill="#0e1b26" height="56" rx="12" stroke="#38bdf8" stroke-width="2" width="200" x="380" y="32"></rect><text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="480" y="56">YES → use 1 model</text><text fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="480" y="74">fast, cheap, ties</text></g>
-<!-- decisão 2 (NÃO) -->
+<!-- decisêo 2 (NêO) -->
 <g filter="url(#m22t6-glow)"><rect fill="#0e1622" height="56" rx="12" stroke="url(#m22t6-grad)" stroke-width="2" width="210" x="380" y="112"></rect></g>
 <text fill="#60a5fa" font-family="Inter,sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" x="485" y="134">NO → you want 1 endpoint</text>
 <text fill="#bcd6ff" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="485" y="152">+ hedge, and cost/wait don’t matter?</text>
@@ -606,12 +606,12 @@
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🛠️</span> Hands-on: conceptual Fugu setup in Claude Code</h3>
 <p class="text-neutral-300 text-sm mb-3">At the conceptual level, the idea is to point Claude Code to the Fugu endpoint using your API key—the same “base URL + API key” pattern you use with any compatible provider. <strong>Honesty first:</strong> the steps <em>exact</em> (correct endpoint, variable names, billing) come from <strong>Sakana's official documentation (sakana.ai)</strong> and the author's setup markdown. The field test reports that Fugu's setup <em>Isn’t trivial</em> — it’s not just “swap the endpoint + key” like with a typical OpenAI-compatible provider. Treat the example below as a skeleton, not a literal recipe.</p>
 <pre class="font-mono text-xs sm:text-sm bg-dark-900 border border-dark-600 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap"># Esqueleto conceitual — substitua pelos valores reais da doc da Sakana.
-# NÃO é um endpoint garantido; confirme em sakana.ai e no .md do autor.
+# NêO é um endpoint garantido; confirme em sakana.ai e no .md do autor.
 
 export ANTHROPIC_BASE_URL="&lt;base-url-da-sakana&gt;"   # ex.: a URL do gateway Fugu
 export ANTHROPIC_API_KEY="&lt;sua-api-key&gt;"           # sua chave do Fugu
 
-# depois, no Claude Code, você apontaria a sessão para esse provider
+# depois, no Claude Code, você apontaria a sessêo para esse provider
 # e usaria o modelo "fugu-ultra" conforme a doc indicar.
 claude --model fugu-ultra "resuma este repositório e aponte 3 riscos"</pre>
 <p class="text-neutral-300 text-sm mt-3"><strong>Billing:</strong> there are two ways — <em>subscription</em> (monthly plan, like the author who exceeded the 5h window on the US$ 200/month plan) or <em>pay-as-you-go via API</em> (pay per token used). To experiment without committing to a plan, pay-as-you-go is usually the way to go—but remember the hidden cost: you pay for the <em>orchestration tokens</em> of the team. Confirm values and endpoints in <code class="text-primary">sakana.ai</code> before running.</p>
@@ -703,9 +703,9 @@ claude --model fugu-ultra "resuma este repositório e aponte 3 riscos"</pre>
         INEMA.registerCheck('modulo-2-2#q1', {
           answer: 1,
           explain: {
-            0: 'Ao contrário: o Fugu não venceu nenhuma tarefa e foi ~5× mais caro.',
+            0: 'Ao contrário: o Fugu nêo venceu nenhuma tarefa e foi ~5× mais caro.',
             1: 'Isso. 36/38 empate, ~4.5× mais lento (357 vs 80 min) e ~5× mais caro (US$ 53,60 vs US$ 10,66).',
-            2: 'Empate na correção sim, mas custo e latência foram muito diferentes — 5× e 4.5×.'
+            2: 'Empate na correçêo sim, mas custo e latência foram muito diferentes — 5× e 4.5×.'
           }
         });
       }

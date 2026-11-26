@@ -46,7 +46,7 @@
     "tracks": [
       { "n": "1", "title": "Fundamentos", "modules": [
         { "id": "1-1", "title": "O que é orquestrar várias LLMs", "topics": 6, "href": "curso/trilha1/modulo-1-1.html" },
-        { "id": "1-2", "title": "O espectro: da mão ao modelo-maestro", "topics": 6, "href": "curso/trilha1/modulo-1-2.html" }
+        { "id": "1-2", "title": "O espectro: da mêo ao modelo-maestro", "topics": 6, "href": "curso/trilha1/modulo-1-2.html" }
       ]},
       { "n": "2", "title": "Fugu Ultra", "modules": [
         { "id": "2-1", "title": "Como o Fugu funciona", "topics": 6, "href": "curso/trilha2/modulo-2-1.html" },
@@ -180,7 +180,7 @@
 </div>
 </nav>
 <!-- Breadcrumb -->
-<nav aria-label="Trilha de navegação" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Trilha de navegaçêo" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-purple-400" href="../../index.html">Início</a><span>/</span>
 <a class="hover:text-purple-400" href="index.html">Trilha 3</a><span>/</span>
@@ -207,7 +207,7 @@
 <div class="lg:grid lg:grid-cols-[210px_1fr] lg:gap-10">
 <!-- TOC sticky + scrollspy -->
 <nav aria-label="Índice da página" class="hidden lg:block sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Seção <span data-inema-section-counter="">1 de 6</span></p>
+<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-inema-section-counter="">1 de 6</span></p>
 <ol class="space-y-1.5 text-sm">
 <li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-1">1. 1 prompt → N modelos</a></li>
 <li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-2">2. O juiz que funde</a></li>
@@ -229,13 +229,13 @@
 </div>
 <div class="inema-prose">
 <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t1-p1">A OpenRouter Fusion tem um gesto central simples de descrever: pegue <strong class="text-purple-400">um único prompt</strong> e mande-o, sem mudar nada, para vários modelos diferentes <strong class="text-purple-400">ao mesmo tempo</strong>. Cada modelo recebe a tarefa <em>inteira</em> e a resolve por conta própria. No fim, você tem N respostas concorrentes para a mesma pergunta.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t1-p2">A palavra-chave é <strong>ensemble</strong>: um conjunto de modelos respondendo a mesma coisa. Não é divisão de trabalho — é repetição. Ninguém recebe "só o pedaço de código" ou "só o resumo". Todos veem o pedido completo, e a diversidade entre eles é justamente o que a Fusion quer explorar.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t1-p2">A palavra-chave é <strong>ensemble</strong>: um conjunto de modelos respondendo a mesma coisa. Nêo é divisêo de trabalho — é repetiçêo. Ninguém recebe "só o pedaço de código" ou "só o resumo". Todos veem o pedido completo, e a diversidade entre eles é justamente o que a Fusion quer explorar.</p>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🆕</span> Novo aqui? Três termos</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
 <li><strong>Ensemble:</strong> juntar vários modelos (ou execuções) e combinar as saídas — em vez de confiar em um só.</li>
-<li><strong>Fan-out:</strong> disparar a mesma requisição para muitos destinos em paralelo de uma vez.</li>
+<li><strong>Fan-out:</strong> disparar a mesma requisiçêo para muitos destinos em paralelo de uma vez.</li>
 <li><strong>Candidato:</strong> cada resposta individual que volta de um modelo, antes de o juiz escolher/fundir.</li>
 </ul>
 </div>
@@ -262,7 +262,7 @@
 <button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
 </div>
 <div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t2-p1">N respostas soltas não servem de nada — você quer <em>uma</em>. É aí que entra o <strong class="text-purple-400">juiz</strong>: um modelo que lê todos os candidatos e produz a resposta final. Esse padrão tem nome próprio na literatura — <strong class="text-purple-400">LLM-as-judge</strong>: usar um modelo para avaliar/escolher entre saídas de modelos.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t2-p1">N respostas soltas nêo servem de nada — você quer <em>uma</em>. É aí que entra o <strong class="text-purple-400">juiz</strong>: um modelo que lê todos os candidatos e produz a resposta final. Esse padrêo tem nome próprio na literatura — <strong class="text-purple-400">LLM-as-judge</strong>: usar um modelo para avaliar/escolher entre saídas de modelos.</p>
 </div>
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="Vários candidatos entram no juiz, que avalia e produz uma resposta final única" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
@@ -326,16 +326,16 @@
 <button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
 </div>
 <div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t3-p1">A intuição é antiga e vem da estatística: se vários "votantes" erram de jeitos <strong class="text-purple-400">independentes</strong>, juntar os votos cancela boa parte dos erros e deixa o acerto comum sobressair. É a "sabedoria das multidões". Modelos diferentes — treinados por empresas diferentes — tendem a errar em pontos diferentes.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t3-p2">Mas há uma condição crítica, que muita gente esquece: <strong>os erros precisam ser descorrelacionados</strong>. Se você roda cinco cópias do <em>mesmo</em> modelo, elas erram quase igual — o ensemble não ajuda. O ganho da Fusion depende de diversidade real entre os modelos do ensemble.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t3-p1">A intuiçêo é antiga e vem da estatística: se vários "votantes" erram de jeitos <strong class="text-purple-400">independentes</strong>, juntar os votos cancela boa parte dos erros e deixa o acerto comum sobressair. É a "sabedoria das multidões". Modelos diferentes — treinados por empresas diferentes — tendem a errar em pontos diferentes.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t3-p2">Mas há uma condiçêo crítica, que muita gente esquece: <strong>os erros precisam ser descorrelacionados</strong>. Se você roda cinco cópias do <em>mesmo</em> modelo, elas erram quase igual — o ensemble nêo ajuda. O ganho da Fusion depende de diversidade real entre os modelos do ensemble.</p>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">📊</span> A regra do ensemble em uma frase</h3>
-<p class="text-neutral-300 text-sm mb-3">Ensemble só ajuda quando os participantes são, ao mesmo tempo:</p>
+<p class="text-neutral-300 text-sm mb-3">Ensemble só ajuda quando os participantes sêo, ao mesmo tempo:</p>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li><strong>Bons o bastante</strong> — cada um acerta mais do que erra (senão você só soma ruído).</li>
-<li><strong>Diversos o bastante</strong> — erram em lugares diferentes (senão erram juntos e o juiz não tem o que salvar).</li>
-<li><strong>Julgáveis</strong> — o juiz consegue distinguir a melhor resposta (senão escolhe mal).</li>
+<li><strong>Bons o bastante</strong> — cada um acerta mais do que erra (senêo você só soma ruído).</li>
+<li><strong>Diversos o bastante</strong> — erram em lugares diferentes (senêo erram juntos e o juiz nêo tem o que salvar).</li>
+<li><strong>Julgáveis</strong> — o juiz consegue distinguir a melhor resposta (senêo escolhe mal).</li>
 </ul>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -348,7 +348,7 @@
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Onde não adianta</h4>
+<h4 class="font-bold text-red-400 mb-4">✗ Onde nêo adianta</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Cinco cópias do mesmo modelo</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Todos os modelos têm a mesma lacuna</span></li>
@@ -367,14 +367,14 @@
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">🔀 Fusion × Fugu: ensemble × decomposição</h2>
+<h2 class="text-2xl font-bold">🔀 Fusion × Fugu: ensemble × decomposiçêo</h2>
 </div>
 <button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
 </div>
 <div class="inema-prose">
 <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t4-p1">Os dois usam vários modelos — e param de se parecer aí. O <strong class="text-purple-400">Fugu decompõe</strong>: um gerente quebra a tarefa em partes e dá cada parte a um especialista (quem é bom em código faz o código). A <strong class="text-purple-400">Fusion replica</strong>: a tarefa inteira vai a todos, e o juiz funde respostas concorrentes. Decompor é dividir; replicar é repetir.</p>
 </div>
-<!-- SVG comparativo Fusion vs Fugu: paralelo × decomposição -->
+<!-- SVG comparativo Fusion vs Fugu: paralelo × decomposiçêo -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="Fugu decompõe a tarefa em pedaços diferentes para especialistas; Fusion replica o mesmo prompt para todos" class="w-full h-auto" role="img" viewbox="0 0 1000 270">
 <defs>
@@ -425,16 +425,16 @@
 <table class="w-full text-sm border border-dark-600 rounded-xl overflow-hidden">
 <thead>
 <tr class="bg-dark-800">
-<th class="text-left px-4 py-3 border-b border-dark-600 text-neutral-400 font-semibold">Dimensão</th>
+<th class="text-left px-4 py-3 border-b border-dark-600 text-neutral-400 font-semibold">Dimensêo</th>
 <th class="text-left px-4 py-3 border-b border-dark-600 text-blue-400 font-semibold">🐡 Fugu (decompõe)</th>
 <th class="text-left px-4 py-3 border-b border-dark-600 text-purple-400 font-semibold">⚖️ Fusion (ensemble)</th>
 </tr>
 </thead>
 <tbody class="text-neutral-300">
 <tr class="bg-dark-800/40"><td class="px-4 py-3 border-b border-dark-600 font-medium">O que cada modelo recebe</td><td class="px-4 py-3 border-b border-dark-600">um <strong>pedaço</strong> da tarefa</td><td class="px-4 py-3 border-b border-dark-600">a <strong>tarefa inteira</strong></td></tr>
-<tr><td class="px-4 py-3 border-b border-dark-600 font-medium">Quem decide o split</td><td class="px-4 py-3 border-b border-dark-600">um gerente/conductor</td><td class="px-4 py-3 border-b border-dark-600">ninguém — não há split</td></tr>
+<tr><td class="px-4 py-3 border-b border-dark-600 font-medium">Quem decide o split</td><td class="px-4 py-3 border-b border-dark-600">um gerente/conductor</td><td class="px-4 py-3 border-b border-dark-600">ninguém — nêo há split</td></tr>
 <tr class="bg-dark-800/40"><td class="px-4 py-3 border-b border-dark-600 font-medium">Como funde</td><td class="px-4 py-3 border-b border-dark-600">junta partes complementares</td><td class="px-4 py-3 border-b border-dark-600">juiz escolhe/funde concorrentes</td></tr>
-<tr><td class="px-4 py-3 border-b border-dark-600 font-medium">Ganho esperado</td><td class="px-4 py-3 border-b border-dark-600">especialização por parte</td><td class="px-4 py-3 border-b border-dark-600">robustez por diversidade</td></tr>
+<tr><td class="px-4 py-3 border-b border-dark-600 font-medium">Ganho esperado</td><td class="px-4 py-3 border-b border-dark-600">especializaçêo por parte</td><td class="px-4 py-3 border-b border-dark-600">robustez por diversidade</td></tr>
 <tr class="bg-dark-800/40"><td class="px-4 py-3 font-medium">Pergunta "quem faz"</td><td class="px-4 py-3">divide entre especialistas</td><td class="px-4 py-3">todos fazem tudo</td></tr>
 </tbody>
 </table>
@@ -455,7 +455,7 @@
 <button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
 </div>
 <div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t5-p1">A Fusion não inventou "paralelo + agregar" — ela empacota um padrão bem estudado. Conhecer os parentes ajuda a ver que isso é técnica madura, não mágica de produto. São três que valem o nome:</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t5-p1">A Fusion nêo inventou "paralelo + agregar" — ela empacota um padrêo bem estudado. Conhecer os parentes ajuda a ver que isso é técnica madura, nêo mágica de produto. Sêo três que valem o nome:</p>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
@@ -464,16 +464,16 @@
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">LLM-as-judge</h4><p class="text-neutral-300 text-sm">Usar um modelo para <em>avaliar</em> as saídas de outros — dar nota, ranquear, escolher a melhor. É exatamente o "juiz" da Fusion, e também a base de muitos sistemas de avaliação automática de qualidade.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">LLM-as-judge</h4><p class="text-neutral-300 text-sm">Usar um modelo para <em>avaliar</em> as saídas de outros — dar nota, ranquear, escolher a melhor. É exatamente o "juiz" da Fusion, e também a base de muitos sistemas de avaliaçêo automática de qualidade.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">Mixture-of-agents (MoA)</h4><p class="text-neutral-300 text-sm">Vários modelos em <em>camadas</em>: a primeira camada responde, a segunda lê as respostas da primeira e refina, e assim por diante. É a Fusion "em profundidade" — agregar não só uma vez, mas em rodadas.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-2">Mixture-of-agents (MoA)</h4><p class="text-neutral-300 text-sm">Vários modelos em <em>camadas</em>: a primeira camada responde, a segunda lê as respostas da primeira e refina, e assim por diante. É a Fusion "em profundidade" — agregar nêo só uma vez, mas em rodadas.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> O fio que une os três</h3>
-<p class="text-neutral-300 text-sm">Todos respondem à segunda pergunta da orquestração — "como as respostas se combinam" — gerando <strong>múltiplos candidatos</strong> e <strong>agregando</strong>. A Fusion é a versão cross-provider, atrás de uma API; o padrão em si você pode montar na mão (você faz isso no Módulo 3.2).</p>
+<p class="text-neutral-300 text-sm">Todos respondem à segunda pergunta da orquestraçêo — "como as respostas se combinam" — gerando <strong>múltiplos candidatos</strong> e <strong>agregando</strong>. A Fusion é a versêo cross-provider, atrás de uma API; o padrêo em si você pode montar na mêo (você faz isso no Módulo 3.2).</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold text-sm mb-1">Self-consistency</div><div class="text-xs text-neutral-400">votar amostras</div></div>
@@ -498,19 +498,19 @@
 </div>
 <div class="inema-prose">
 <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t6-p1">Aqui está o contrapeso. Rodar N modelos custa <strong class="text-purple-400">N respostas completas</strong> — cada um lê o prompt e escreve uma resposta inteira, e você paga por todos. Some a chamada do <strong class="text-purple-400">juiz</strong>, que ainda lê <em>todas</em> as N respostas. A conta cresce para algo na ordem de <strong>N+1</strong> execuções para entregar uma resposta só.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t6-p2">Latência tem uma boa e uma má notícia. A boa: como os modelos rodam em paralelo, o tempo é o do <em>mais lento</em>, não a soma. A má: o juiz só começa depois que o último termina — então você sempre espera o pior do grupo, mais o passo de fusão.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t6-p2">Latência tem uma boa e uma má notícia. A boa: como os modelos rodam em paralelo, o tempo é o do <em>mais lento</em>, nêo a soma. A má: o juiz só começa depois que o último termina — entêo você sempre espera o pior do grupo, mais o passo de fusêo.</p>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">📊</span> A aritmética do ensemble</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
 <li><strong class="text-blue-400">Custo</strong> ≈ (custo de 1 resposta) × N  +  (custo do juiz lendo N respostas)</li>
 <li><strong class="text-blue-400">Tempo</strong> ≈ (resposta mais lenta entre os N)  +  (tempo do juiz)</li>
-<li><strong class="text-blue-400">Comparação</strong>: 3 modelos + juiz ≈ 4 chamadas pagas por <em>uma</em> resposta</li>
+<li><strong class="text-blue-400">Comparaçêo</strong>: 3 modelos + juiz ≈ 4 chamadas pagas por <em>uma</em> resposta</li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">⚠️</span> A armadilha mental</h3>
-<p class="text-neutral-300 text-sm">"Perguntar a todo mundo" parece de graça porque cada resposta isolada é barata. Mas você multiplica por N e ainda paga o juiz. Se um modelo forte já acerta, esse N+1 é dinheiro queimado — exatamente o ladder de decisão que a Trilha 2 mostrou nos 38 testes.</p>
+<p class="text-neutral-300 text-sm">"Perguntar a todo mundo" parece de graça porque cada resposta isolada é barata. Mas você multiplica por N e ainda paga o juiz. Se um modelo forte já acerta, esse N+1 é dinheiro queimado — exatamente o ladder de decisêo que a Trilha 2 mostrou nos 38 testes.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold text-sm mb-1">Custo N+1</div><div class="text-xs text-neutral-400">N respostas + juiz</div></div>
@@ -520,7 +520,7 @@
 </div>
 <!-- Checagem leve opcional -->
 <div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-3-1#q1">
-<p class="font-medium mb-4">Recuperação rápida (opcional): qual é a diferença central entre Fusion e Fugu?</p>
+<p class="font-medium mb-4">Recuperaçêo rápida (opcional): qual é a diferença central entre Fusion e Fugu?</p>
 <div class="inema-check-options space-y-2">
 <button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">A Fusion usa modelos mais inteligentes que o Fugu</button>
 <button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">A Fusion replica o mesmo prompt a vários modelos e um juiz funde; o Fugu decompõe a tarefa em pedaços</button>
@@ -539,11 +539,11 @@
 <div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
 <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do módulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">1 prompt → N modelos</strong><span class="text-neutral-400"> — o mesmo pedido inteiro, em paralelo, para todos. Ensemble, não divisão.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">1 prompt → N modelos</strong><span class="text-neutral-400"> — o mesmo pedido inteiro, em paralelo, para todos. Ensemble, nêo divisêo.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">O juiz funde</strong><span class="text-neutral-400"> — LLM-as-judge escolhe, vota ou sintetiza uma resposta final.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Diversidade é a condição</strong><span class="text-neutral-400"> — só melhora se os erros forem descorrelacionados.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Diversidade é a condiçêo</strong><span class="text-neutral-400"> — só melhora se os erros forem descorrelacionados.</span></div></div>
 <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Fusion × Fugu</strong><span class="text-neutral-400"> — replicar a tarefa toda vs decompor em pedaços.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Custo N+1</strong><span class="text-neutral-400"> — N respostas mais o juiz; só vale quando 1 modelo não basta.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Custo N+1</strong><span class="text-neutral-400"> — N respostas mais o juiz; só vale quando 1 modelo nêo basta.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-purple-400 mb-2">Próximo módulo:</h3>
@@ -599,9 +599,9 @@
         INEMA.registerCheck('modulo-3-1#q1', {
           answer: 1,
           explain: {
-            0: 'Não é sobre "mais inteligente" — os dois usam modelos frontier. A diferença é a arquitetura: ensemble vs decomposição.',
+            0: 'Nêo é sobre "mais inteligente" — os dois usam modelos frontier. A diferença é a arquitetura: ensemble vs decomposiçêo.',
             1: 'Isso. Fusion replica o prompt inteiro a N modelos e funde com um juiz; Fugu quebra a tarefa em pedaços e delega.',
-            2: 'Ao contrário: a Fusion roda N modelos + juiz, então costuma custar mais, não menos, que um modelo só.'
+            2: 'Ao contrário: a Fusion roda N modelos + juiz, entêo costuma custar mais, nêo menos, que um modelo só.'
           }
         });
       }

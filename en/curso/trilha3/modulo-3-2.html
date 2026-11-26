@@ -46,7 +46,7 @@
     "tracks": [
       { "n": "1", "title": "Fundamentos", "modules": [
         { "id": "1-1", "title": "O que é orquestrar várias LLMs", "topics": 6, "href": "curso/trilha1/modulo-1-1.html" },
-        { "id": "1-2", "title": "O espectro: da mão ao modelo-maestro", "topics": 6, "href": "curso/trilha1/modulo-1-2.html" }
+        { "id": "1-2", "title": "O espectro: da mêo ao modelo-maestro", "topics": 6, "href": "curso/trilha1/modulo-1-2.html" }
       ]},
       { "n": "2", "title": "Fugu Ultra", "modules": [
         { "id": "2-1", "title": "Como o Fugu funciona", "topics": 6, "href": "curso/trilha2/modulo-2-1.html" },
@@ -264,7 +264,7 @@
 <div class="inema-prose">
 <p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t2-p1">The honest default is uncomfortable for anyone who loves orchestration: <strong class="text-purple-400">For most tasks, a top model on its own is already enough</strong>. If it solves the task, the ensemble only adds cost and wait time without changing the result. That’s exactly what the 38 tests in Track 2 showed — 36 of 38 were technical ties, and the soloist was faster and cheaper.</p>
 </div>
-<!-- SVG: fluxo de decisão "quando vale o ensemble" -->
+<!-- SVG: fluxo de decisêo "quando vale o ensemble" -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="Decision flow: if one strong model already solves it, use one; otherwise, if errors are costly and there’s no answer key, run the ensemble; otherwise, still use one model" class="w-full h-auto" role="img" viewbox="0 0 1000 280">
 <defs>
@@ -275,7 +275,7 @@
 <marker id="m32t2-ahc" markerheight="9" markerwidth="9" orient="auto" refx="6.5" refy="4.5"><path d="M0,0 L8,4.5 L0,9 L2.4,4.5 Z" fill="#38bdf8"></path></marker>
 </defs>
 <rect fill="url(#m32t2-grid)" height="280" width="1000" x="0" y="0"></rect>
-<!-- decisão 1 -->
+<!-- decisêo 1 -->
 <g filter="url(#m32t2-glow)"><rect fill="#1a1230" height="72" rx="14" stroke="url(#m32t2-grad)" stroke-width="2.4" width="180" x="30" y="100"></rect></g>
 <text fill="#c084fc" font-family="Inter,sans-serif" font-size="13" font-weight="700" text-anchor="middle" x="120" y="130">1 strong model</text>
 <text fill="#e3ccff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="120" y="150">does it already solve it?</text>
@@ -283,13 +283,13 @@
 <path d="M120,172 C120,225 360,225 360,200" fill="none" marker-end="url(#m32t2-ahc)" stroke="#38bdf8" stroke-width="1.8"></path>
 <text fill="#7fd4ff" font-family="Inter,sans-serif" font-size="12" font-weight="600" x="200" y="216">YES</text>
 <rect fill="#0e1b26" height="44" rx="11" stroke="#38bdf8" stroke-width="2" width="160" x="280" y="200"></rect><text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" x="360" y="227">use just 1 model</text>
-<!-- NÃO -> decisão 2 -->
+<!-- NêO -> decisêo 2 -->
 <path d="M210,136 L290,136" fill="none" marker-end="url(#m32t2-ah)" stroke="#c084fc" stroke-width="1.8"></path>
 <text fill="#c4a6f5" font-family="Inter,sans-serif" font-size="12" font-weight="600" x="248" y="126">NO</text>
 <g filter="url(#m32t2-glow)"><rect fill="#1a1230" height="72" rx="14" stroke="url(#m32t2-grad)" stroke-width="2.4" width="200" x="290" y="100"></rect></g>
 <text fill="#c084fc" font-family="Inter,sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" x="390" y="128">expensive error E</text>
 <text fill="#e3ccff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="390" y="148">no answer key?</text>
-<!-- NÃO -> 1 modelo -->
+<!-- NêO -> 1 modelo -->
 <path d="M390,172 C390,235 600,235 600,210" fill="none" marker-end="url(#m32t2-ahc)" stroke="#38bdf8" stroke-width="1.8"></path>
 <text fill="#7fd4ff" font-family="Inter,sans-serif" font-size="12" font-weight="600" x="470" y="226">NO</text>
 <rect fill="#0e1b26" height="44" rx="11" stroke="#38bdf8" stroke-width="2" width="160" x="520" y="210"></rect><text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="12.5" font-weight="600" text-anchor="middle" x="600" y="237">1 model still</text>
@@ -335,7 +335,7 @@
 <pre class="font-mono text-xs sm:text-sm bg-dark-900 border border-dark-600 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Tarefa: &lt;descreva a tarefa — ex.: "proponha um nome e tagline
 para o produto X"&gt;
 
-Use o padrão ENSEMBLE + JUIZ:
+Use o padrêo ENSEMBLE + JUIZ:
 1. Abra 3 sub-agents em PARALELO. Cada um resolve a tarefa INTEIRA,
    mas por um ângulo diferente:
    - agente 1: ângulo &lt;ex.: "ousado / memorável"&gt;
@@ -558,8 +558,8 @@ Use o padrão ENSEMBLE + JUIZ:
           answer: 1,
           explain: {
             0: 'Esse é o erro de adotar o mais automático por moda. A primeira pergunta é se você precisa orquestrar.',
-            1: 'Isso. O default é 1 modelo forte; orquestrar é a exceção que precisa justificar o próprio custo.',
-            2: 'Capacidade técnica não é a primeira pergunta — primeiro decida se a orquestração se justifica.'
+            1: 'Isso. O default é 1 modelo forte; orquestrar é a exceçêo que precisa justificar o próprio custo.',
+            2: 'Capacidade técnica nêo é a primeira pergunta — primeiro decida se a orquestraçêo se justifica.'
           }
         });
       }
