@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="llms-orquestradas" name="inema-course"/>
+<meta content="llms-orquestradas" name="ARCKHÉ-course"/>
 <title>Module 3.2 · Fusion in practice and the future of the skill | Orchestrated LLMs</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){var r={};for(var x in o)r[x]=o[x];return r;}
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='inema-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'inema-dark':{dark:true,attr:null,cs:'dark'}, 'claro':{dark:false,attr:null,cs:'light'}, 'sepia':{dark:false,attr:'sepia',cs:'light'}, 'foco':{dark:null,attr:'foco',cs:null}, 'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'}, 'claro':{dark:false,attr:null,cs:'light'}, 'sepia':{dark:false,attr:'sepia',cs:'light'}, 'foco':{dark:null,attr:'foco',cs:null}, 'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale = (+p.fontScale||100);
-      s.setProperty('--inema-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible", "Inter", system-ui, sans-serif' : '"Inter", system-ui, sans-serif');
       s.setProperty('--font-body', fam);
@@ -40,7 +40,7 @@
     tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } } }
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "llms-orquestradas",
     "tracks": [
@@ -125,8 +125,8 @@
     }
   </style>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<link href="https://inematds.github.io/sakanafugu/curso/trilha3/modulo-3-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/sakanafugu/en/curso/trilha3/modulo-3-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/sakanafugu/es/curso/trilha3/modulo-3-2.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha3/modulo-3-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-3-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha3/modulo-3-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha3/modulo-3-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha3/modulo-3-2.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha3/modulo-3-2.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha3/modulo-3-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-3-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha3/modulo-3-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:z-[60] focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-dark-800 focus:rounded-lg focus:text-primary" href="#conteudo">Skip to content</a>
 <!-- ===== NAV (trilha 3 ativa) ===== -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -137,37 +137,37 @@
 <span class="text-2xl">🐟</span><span class="font-bold text-lg hidden sm:inline">Orchestrated LLMs</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Fugu</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-purple-400 bg-purple-500/10" href="index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Fusion</span></a>
-<button class="ml-1 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-journey-open="" type="button">
-<span aria-hidden="true">◷</span><span class="hidden sm:inline">Journey</span><span aria-hidden="true" class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<button class="ml-1 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" type="button">
+<span aria-hidden="true">◷</span><span class="hidden sm:inline">Journey</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <div class="relative">
-<button aria-expanded="false" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-appearance-toggle="[data-inema-appearance]" type="button">
+<button aria-expanded="false" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" type="button">
 <span aria-hidden="true">◑</span><span class="hidden sm:inline">Appearance</span>
 </button>
-<div class="inema-appearance-pop" data-inema-appearance="">
-<div aria-label="Theme" class="inema-segment" role="group">
-<button data-inema-set-theme="inema-dark">Dark</button><button data-inema-set-theme="claro">Clear</button><button data-inema-set-theme="sepia">Sepia</button><button data-inema-set-theme="foco">Focus</button><button data-inema-set-theme="contraste">High contrast</button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="">
+<div aria-label="Theme" class="ARCKHÉ-segment" role="group">
+<button data-ARCKHÉ-set-theme="ARCKHÉ-dark">Dark</button><button data-ARCKHÉ-set-theme="claro">Clear</button><button data-ARCKHÉ-set-theme="sepia">Sepia</button><button data-ARCKHÉ-set-theme="foco">Focus</button><button data-ARCKHÉ-set-theme="contraste">High contrast</button>
 </div>
-<div aria-label="Source" class="inema-segment" role="group">
-<button data-inema-set-font="inter">Inter</button><button data-inema-set-font="system">System</button><button data-inema-set-font="leitura">Reading</button>
+<div aria-label="Source" class="ARCKHÉ-segment" role="group">
+<button data-ARCKHÉ-set-font="inter">Inter</button><button data-ARCKHÉ-set-font="system">System</button><button data-ARCKHÉ-set-font="leitura">Reading</button>
 </div>
-<div aria-label="Text size" class="inema-segment" role="group">
-<button data-inema-set-fontscale="100">A</button><button data-inema-set-fontscale="112">A+</button><button data-inema-set-fontscale="125">A++</button>
+<div aria-label="Text size" class="ARCKHÉ-segment" role="group">
+<button data-ARCKHÉ-set-fontscale="100">A</button><button data-ARCKHÉ-set-fontscale="112">A+</button><button data-ARCKHÉ-set-fontscale="125">A++</button>
 </div>
-<div aria-label="Line width" class="inema-segment" role="group">
-<button data-inema-set-linewidth="60">Narrow</button><button data-inema-set-linewidth="68">Medium</button><button data-inema-set-linewidth="75">Wide</button>
+<div aria-label="Line width" class="ARCKHÉ-segment" role="group">
+<button data-ARCKHÉ-set-linewidth="60">Narrow</button><button data-ARCKHÉ-set-linewidth="68">Medium</button><button data-ARCKHÉ-set-linewidth="75">Wide</button>
 </div>
-<div aria-label="Between the lines" class="inema-segment" role="group">
-<button data-inema-set-leading="1.45">Compact</button><button data-inema-set-leading="1.7">Comfortable</button>
+<div aria-label="Between the lines" class="ARCKHÉ-segment" role="group">
+<button data-ARCKHÉ-set-leading="1.45">Compact</button><button data-ARCKHÉ-set-leading="1.7">Comfortable</button>
 </div>
-<div aria-label="Accent color" class="inema-accent-grid" role="group">
-<button data-inema-set-accent="emerald" title="Emerald"></button><button data-inema-set-accent="blue" title="Blue"></button><button data-inema-set-accent="purple" title="Purple"></button><button data-inema-set-accent="amber" title="Amber"></button><button data-inema-set-accent="teal" title="Teal"></button><button data-inema-set-accent="rose" title="Pink"></button>
+<div aria-label="Accent color" class="ARCKHÉ-accent-grid" role="group">
+<button data-ARCKHÉ-set-accent="emerald" title="Emerald"></button><button data-ARCKHÉ-set-accent="blue" title="Blue"></button><button data-ARCKHÉ-set-accent="purple" title="Purple"></button><button data-ARCKHÉ-set-accent="amber" title="Amber"></button><button data-ARCKHÉ-set-accent="teal" title="Teal"></button><button data-ARCKHÉ-set-accent="rose" title="Pink"></button>
 </div>
 </div>
 </div>
@@ -197,39 +197,39 @@
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">6</div><div class="text-xs text-neutral-400">Topics</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">~30</div><div class="text-xs text-neutral-400">Minutes</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">Inter.</div><div class="text-xs text-neutral-400">Level</div></div>
-<div aria-label="Module 3.2 progress" aria-valuemax="100" aria-valuemin="0" class="inema-meter bg-dark-800/50 rounded-lg p-3 border border-dark-600" data-inema-meter="modulo:3-2" role="progressbar">
-<div class="text-xl font-bold text-purple-400" data-inema-meter-pct="">0%</div><div class="text-xs text-neutral-400" data-inema-meter-frac="">0 of 6</div>
+<div aria-label="Module 3.2 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter bg-dark-800/50 rounded-lg p-3 border border-dark-600" data-ARCKHÉ-meter="modulo:3-2" role="progressbar">
+<div class="text-xl font-bold text-purple-400" data-ARCKHÉ-meter-pct="">0%</div><div class="text-xs text-neutral-400" data-ARCKHÉ-meter-frac="">0 of 6</div>
 </div>
 </div>
 </div>
 </header>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-inema-module="3-2" data-inema-track="3" id="conteudo">
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHÉ-module="3-2" data-ARCKHÉ-track="3" id="conteudo">
 <div class="lg:grid lg:grid-cols-[210px_1fr] lg:gap-10">
 <!-- TOC sticky + scrollspy -->
-<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Section <span data-inema-section-counter="">1 of 6</span></p>
+<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Section <span data-ARCKHÉ-section-counter="">1 of 6</span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-1">1. When the ensemble wins</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-2">2. When 1 model is enough</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-3">3. Build it yourself</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-4">4. Unit economics</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-5">5. Vendor hedging</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-6">6. The skill of the future</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-1">1. When the ensemble wins</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-2">2. When 1 model is enough</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-3">3. Build it yourself</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-4">4. Unit economics</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-5">5. Vendor hedging</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-6">6. The skill of the future</a></li>
 </ol>
 </nav>
 <div>
 <!-- ===== TÓPICO 1 ===== -->
-<section class="mb-16 scroll-mt-24" data-inema-topic="modulo-3-2#topico-1" id="topico-1">
+<section class="mb-16 scroll-mt-24" data-ARCKHÉ-topic="modulo-3-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🎯 When parallel-and-merge wins</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t1-p1">An ensemble isn’t free (you saw the N+1 cost in the previous module), so it needs to <em>pay</em> the cost itself. It wins exactly when the <strong class="text-purple-400">the cost of getting it wrong is high</strong> e <strong class="text-purple-400">There’s no answer key</strong> for verification: open decisions, high-stakes writing, analyses where a model’s blind spot could go unnoticed.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t1-p2">The logic: when the task has <strong>high variance</strong> — good models sometimes get it right and sometimes stumble — running several and letting the judge choose reduces the chance you'll get stuck with a lapse from a single model. Diversity buys <em>robustness</em>, not genius.</p>
+<div class="ARCKHÉ-prose">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t1-p1">An ensemble isn’t free (you saw the N+1 cost in the previous module), so it needs to <em>pay</em> the cost itself. It wins exactly when the <strong class="text-purple-400">the cost of getting it wrong is high</strong> e <strong class="text-purple-400">There’s no answer key</strong> for verification: open decisions, high-stakes writing, analyses where a model’s blind spot could go unnoticed.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t1-p2">The logic: when the task has <strong>high variance</strong> — good models sometimes get it right and sometimes stumble — running several and letting the judge choose reduces the chance you'll get stuck with a lapse from a single model. Diversity buys <em>robustness</em>, not genius.</p>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🆕</span> Three decision terms</h3>
@@ -246,23 +246,23 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold text-sm mb-1">Gain</div><div class="text-xs text-neutral-400">robustness, not genius</div></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span>
-<span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
 <!-- ===== TÓPICO 2 ===== -->
-<section class="mb-16 scroll-mt-24" data-inema-topic="modulo-3-2#topico-2" id="topico-2">
+<section class="mb-16 scroll-mt-24" data-ARCKHÉ-topic="modulo-3-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">🥇 When 1 strong model is enough</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t2-p1">The honest default is uncomfortable for anyone who loves orchestration: <strong class="text-purple-400">For most tasks, a top model on its own is already enough</strong>. If it solves the task, the ensemble only adds cost and wait time without changing the result. That’s exactly what the 38 tests in Track 2 showed — 36 of 38 were technical ties, and the soloist was faster and cheaper.</p>
+<div class="ARCKHÉ-prose">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t2-p1">The honest default is uncomfortable for anyone who loves orchestration: <strong class="text-purple-400">For most tasks, a top model on its own is already enough</strong>. If it solves the task, the ensemble only adds cost and wait time without changing the result. That’s exactly what the 38 tests in Track 2 showed — 36 of 38 were technical ties, and the soloist was faster and cheaper.</p>
 </div>
 <!-- SVG: fluxo de decisêo "quando vale o ensemble" -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
@@ -312,22 +312,22 @@
 </ul>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
 <!-- ===== TÓPICO 3 ===== -->
-<section class="mb-16 scroll-mt-24" data-inema-topic="modulo-3-2#topico-3" id="topico-3">
+<section class="mb-16 scroll-mt-24" data-ARCKHÉ-topic="modulo-3-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🛠️ Build it yourself: the "judge" pattern</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t3-p1">You don't need a special API to use the Fusion pattern. The pattern is yours—and Claude Code already launches sub-agents in parallel. Ask for N answers from <strong class="text-purple-400">different angles</strong> and a judge agent that <strong class="text-purple-400">merges</strong>. Manual ensemble, with full control and the cost visible before you pay.</p>
+<div class="ARCKHÉ-prose">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t3-p1">You don't need a special API to use the Fusion pattern. The pattern is yours—and Claude Code already launches sub-agents in parallel. Ask for N answers from <strong class="text-purple-400">different angles</strong> and a judge agent that <strong class="text-purple-400">merges</strong>. Manual ensemble, with full control and the cost visible before you pay.</p>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Practice: ensemble + judge at the helm</h3>
@@ -366,23 +366,23 @@ Use o padrêo ENSEMBLE + JUIZ:
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
 <!-- ===== TÓPICO 4 ===== -->
-<section class="mb-16 scroll-mt-24" data-inema-topic="modulo-3-2#topico-4" id="topico-4">
+<section class="mb-16 scroll-mt-24" data-ARCKHÉ-topic="modulo-3-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">💰 Unit economics of orchestration</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t4-p1"><strong class="text-purple-400">Unit economics</strong> is the cost (and return) of <em>one</em> unit — here, one delivered answer. The right question isn’t "which model is the smartest?" but <strong class="text-purple-400">“what’s the cost per acceptable result?”</strong>. Sometimes 3 cheap models + a judge beat 1 expensive model for the same money — and sometimes they don’t.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t4-p2">It’s the metric the field test author uses to decide: optimize unit economics, not benchmark vanity. Remember the numbers from Track 2 — the orchestrator came out <strong>5× more expensive</strong> (US$ 53,60 vs US$ 10,66) and <strong>4.5× slower</strong> for the <em>same</em> result. Terrible unit economics there; great in another context.</p>
+<div class="ARCKHÉ-prose">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t4-p1"><strong class="text-purple-400">Unit economics</strong> is the cost (and return) of <em>one</em> unit — here, one delivered answer. The right question isn’t "which model is the smartest?" but <strong class="text-purple-400">“what’s the cost per acceptable result?”</strong>. Sometimes 3 cheap models + a judge beat 1 expensive model for the same money — and sometimes they don’t.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t4-p2">It’s the metric the field test author uses to decide: optimize unit economics, not benchmark vanity. Remember the numbers from Track 2 — the orchestrator came out <strong>5× more expensive</strong> (US$ 53,60 vs US$ 10,66) and <strong>4.5× slower</strong> for the <em>same</em> result. Terrible unit economics there; great in another context.</p>
 </div>
 <div class="overflow-x-auto mb-6">
 <table class="w-full text-sm border border-dark-600 rounded-xl overflow-hidden">
@@ -412,23 +412,23 @@ Use o padrêo ENSEMBLE + JUIZ:
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold text-sm mb-1">Call ROI</div><div class="text-xs text-neutral-400">gain ÷ cost</div></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
 <!-- ===== TÓPICO 5 ===== -->
-<section class="mb-16 scroll-mt-24" data-inema-topic="modulo-3-2#topico-5" id="topico-5">
+<section class="mb-16 scroll-mt-24" data-ARCKHÉ-topic="modulo-3-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🛡️ Vendor hedging: don't get locked into 1 provider</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t5-p1"><strong class="text-purple-400">Vendor lock-in</strong> is being locked into a single provider: if it raises prices, goes offline, or degrades its model, you have nowhere to go. Running across multiple providers — through a single API, as OpenRouter does — is a <strong class="text-purple-400">hedge</strong>: insurance against this risk.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t5-p2">The clever detail: this benefit <strong>Doesn’t depend</strong> of the ensemble improving the response. Even when several models produce the same result, the ability to switch providers without rewriting anything already has value — pure operational resilience.</p>
+<div class="ARCKHÉ-prose">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t5-p1"><strong class="text-purple-400">Vendor lock-in</strong> is being locked into a single provider: if it raises prices, goes offline, or degrades its model, you have nowhere to go. Running across multiple providers — through a single API, as OpenRouter does — is a <strong class="text-purple-400">hedge</strong>: insurance against this risk.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t5-p2">The clever detail: this benefit <strong>Doesn’t depend</strong> of the ensemble improving the response. Even when several models produce the same result, the ability to switch providers without rewriting anything already has value — pure operational resilience.</p>
 </div>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">🛡️</span> What hedging gives you</h3>
@@ -449,23 +449,23 @@ Use o padrêo ENSEMBLE + JUIZ:
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold text-sm mb-1">Cross-provider</div><div class="text-xs text-neutral-400">switch without rewriting</div></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
 <!-- ===== TÓPICO 6 ===== -->
-<section class="mb-16 scroll-mt-24" data-inema-topic="modulo-3-2#topico-6" id="topico-6">
+<section class="mb-16 scroll-mt-24" data-ARCKHÉ-topic="modulo-3-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">🔮 The skill of the future: cost-aware orchestration</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t6-p1">Put it all together, and the skill the course aimed to build emerges: <strong class="text-purple-400">know when to orchestrate, which pattern to use, and at what cost</strong>. It’s not about memorizing products — it’s about the judgment to apply the decision ladder and choose between decomposing (Fugu), replicating and merging (Fusion), or simply using a single model.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t6-p2">The field test author’s takeaway sums it up well: the idea is to <strong>future</strong> — avoid being locked into one provider, optimize unit economics, and use the cheapest model that doesn’t sacrifice quality. But <em>today</em>, for a lot of work, still isn’t worth it. The skill is knowing how to distinguish "today" from "when."</p>
+<div class="ARCKHÉ-prose">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t6-p1">Put it all together, and the skill the course aimed to build emerges: <strong class="text-purple-400">know when to orchestrate, which pattern to use, and at what cost</strong>. It’s not about memorizing products — it’s about the judgment to apply the decision ladder and choose between decomposing (Fugu), replicating and merging (Fusion), or simply using a single model.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t6-p2">The field test author’s takeaway sums it up well: the idea is to <strong>future</strong> — avoid being locked into one provider, optimize unit economics, and use the cheapest model that doesn’t sacrifice quality. But <em>today</em>, for a lot of work, still isn’t worth it. The skill is knowing how to distinguish "today" from "when."</p>
 </div>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">🎯</span> The conscious orchestrator checklist</h3>
@@ -477,18 +477,18 @@ Use o padrêo ENSEMBLE + JUIZ:
 </ul>
 </div>
 <!-- Checagem leve opcional -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-3-2#q1">
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-3-2#q1">
 <p class="font-medium mb-4">Quick recall (optional): what is the first question an aware orchestrator asks?</p>
-<div class="inema-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">What’s the most automated orchestrator available?</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">Do I really need to orchestrate, or will one strong model do the job?</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">How many models can I run in parallel?</button>
+<div class="ARCKHÉ-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">What’s the most automated orchestrator available?</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Do I really need to orchestrate, or will one strong model do the job?</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">How many models can I run in parallel?</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
@@ -518,7 +518,7 @@ Use o padrêo ENSEMBLE + JUIZ:
 </main>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Orchestrated LLMs — Module 3.2 · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a></p>
+<p>Orchestrated LLMs — Module 3.2 · <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p>
 </div>
 </footer>
 <script>
@@ -541,7 +541,7 @@ Use o padrêo ENSEMBLE + JUIZ:
       themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
         html.classList.toggle('dark', nowDark);
-        if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', nowDark ? 'inema-dark' : 'claro'); } else { localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
+        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); } else { localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         sync();
       });
     })();
@@ -551,10 +551,10 @@ Use o padrêo ENSEMBLE + JUIZ:
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
     window.addEventListener('DOMContentLoaded', function () {
-      if (window.INEMA && INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-3-2#q1', {
+      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-3-2#q1', {
           answer: 1,
           explain: {
             0: 'Esse é o erro de adotar o mais automático por moda. A primeira pergunta é se você precisa orquestrar.',

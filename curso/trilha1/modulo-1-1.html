@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="llms-orquestradas" name="inema-course"/>
+<meta content="llms-orquestradas" name="ARCKHÉ-course"/>
 <title>Módulo 1.1 · O que é orquestrar várias LLMs | LLMs Orquestradas</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){var r={};for(var x in o)r[x]=o[x];return r;}
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='inema-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'inema-dark':{dark:true,attr:null,cs:'dark'}, 'claro':{dark:false,attr:null,cs:'light'}, 'sepia':{dark:false,attr:'sepia',cs:'light'}, 'foco':{dark:null,attr:'foco',cs:null}, 'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'}, 'claro':{dark:false,attr:null,cs:'light'}, 'sepia':{dark:false,attr:'sepia',cs:'light'}, 'foco':{dark:null,attr:'foco',cs:null}, 'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale = (+p.fontScale||100);
-      s.setProperty('--inema-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible", "Inter", system-ui, sans-serif' : '"Inter", system-ui, sans-serif');
       s.setProperty('--font-body', fam);
@@ -40,7 +40,7 @@
     tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } } }
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "llms-orquestradas",
     "tracks": [
@@ -122,8 +122,8 @@
     }
   </style>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<link href="https://inematds.github.io/sakanafugu/curso/trilha1/modulo-1-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/sakanafugu/en/curso/trilha1/modulo-1-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/sakanafugu/es/curso/trilha1/modulo-1-1.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha1/modulo-1-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha1/modulo-1-1.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha1/modulo-1-1.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip sr-only focus:not-sr-only focus:absolute focus:z-[60] focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-dark-800 focus:rounded-lg focus:text-primary" href="#conteudo">Pular para o conteúdo</a>
 <!-- ===== NAV (trilha 1 ativa) ===== -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -134,37 +134,37 @@
 <span class="text-2xl">🐟</span><span class="font-bold text-lg hidden sm:inline">LLMs Orquestradas</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Fugu</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Fusion</span></a>
-<button class="ml-1 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-journey-open="" type="button">
-<span aria-hidden="true">◷</span><span class="hidden sm:inline">Jornada</span><span aria-hidden="true" class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<button class="ml-1 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" type="button">
+<span aria-hidden="true">◷</span><span class="hidden sm:inline">Jornada</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <div class="relative">
-<button aria-expanded="false" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-appearance-toggle="[data-inema-appearance]" type="button">
+<button aria-expanded="false" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" type="button">
 <span aria-hidden="true">◑</span><span class="hidden sm:inline">Aparência</span>
 </button>
-<div class="inema-appearance-pop" data-inema-appearance="">
-<div aria-label="Tema" class="inema-segment" role="group">
-<button data-inema-set-theme="inema-dark">Escuro</button><button data-inema-set-theme="claro">Claro</button><button data-inema-set-theme="sepia">Sépia</button><button data-inema-set-theme="foco">Foco</button><button data-inema-set-theme="contraste">Alto contraste</button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="">
+<div aria-label="Tema" class="ARCKHÉ-segment" role="group">
+<button data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button><button data-ARCKHÉ-set-theme="claro">Claro</button><button data-ARCKHÉ-set-theme="sepia">Sépia</button><button data-ARCKHÉ-set-theme="foco">Foco</button><button data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
 </div>
-<div aria-label="Fonte" class="inema-segment" role="group">
-<button data-inema-set-font="inter">Inter</button><button data-inema-set-font="system">Sistema</button><button data-inema-set-font="leitura">Leitura</button>
+<div aria-label="Fonte" class="ARCKHÉ-segment" role="group">
+<button data-ARCKHÉ-set-font="inter">Inter</button><button data-ARCKHÉ-set-font="system">Sistema</button><button data-ARCKHÉ-set-font="leitura">Leitura</button>
 </div>
-<div aria-label="Tamanho do texto" class="inema-segment" role="group">
-<button data-inema-set-fontscale="100">A</button><button data-inema-set-fontscale="112">A+</button><button data-inema-set-fontscale="125">A++</button>
+<div aria-label="Tamanho do texto" class="ARCKHÉ-segment" role="group">
+<button data-ARCKHÉ-set-fontscale="100">A</button><button data-ARCKHÉ-set-fontscale="112">A+</button><button data-ARCKHÉ-set-fontscale="125">A++</button>
 </div>
-<div aria-label="Largura da linha" class="inema-segment" role="group">
-<button data-inema-set-linewidth="60">Estreito</button><button data-inema-set-linewidth="68">Médio</button><button data-inema-set-linewidth="75">Largo</button>
+<div aria-label="Largura da linha" class="ARCKHÉ-segment" role="group">
+<button data-ARCKHÉ-set-linewidth="60">Estreito</button><button data-ARCKHÉ-set-linewidth="68">Médio</button><button data-ARCKHÉ-set-linewidth="75">Largo</button>
 </div>
-<div aria-label="Entrelinha" class="inema-segment" role="group">
-<button data-inema-set-leading="1.45">Compacto</button><button data-inema-set-leading="1.7">Confortável</button>
+<div aria-label="Entrelinha" class="ARCKHÉ-segment" role="group">
+<button data-ARCKHÉ-set-leading="1.45">Compacto</button><button data-ARCKHÉ-set-leading="1.7">Confortável</button>
 </div>
-<div aria-label="Cor de acento" class="inema-accent-grid" role="group">
-<button data-inema-set-accent="emerald" title="Esmeralda"></button><button data-inema-set-accent="blue" title="Azul"></button><button data-inema-set-accent="purple" title="Roxo"></button><button data-inema-set-accent="amber" title="Âmbar"></button><button data-inema-set-accent="teal" title="Teal"></button><button data-inema-set-accent="rose" title="Rosa"></button>
+<div aria-label="Cor de acento" class="ARCKHÉ-accent-grid" role="group">
+<button data-ARCKHÉ-set-accent="emerald" title="Esmeralda"></button><button data-ARCKHÉ-set-accent="blue" title="Azul"></button><button data-ARCKHÉ-set-accent="purple" title="Roxo"></button><button data-ARCKHÉ-set-accent="amber" title="Âmbar"></button><button data-ARCKHÉ-set-accent="teal" title="Teal"></button><button data-ARCKHÉ-set-accent="rose" title="Rosa"></button>
 </div>
 </div>
 </div>
@@ -194,39 +194,39 @@
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">~30</div><div class="text-xs text-neutral-400">Minutos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Básico</div><div class="text-xs text-neutral-400">Nível</div></div>
-<div aria-label="Progresso do módulo 1.1" aria-valuemax="100" aria-valuemin="0" class="inema-meter bg-dark-800/50 rounded-lg p-3 border border-dark-600" data-inema-meter="modulo:1-1" role="progressbar">
-<div class="text-xl font-bold text-emerald-400" data-inema-meter-pct="">0%</div><div class="text-xs text-neutral-400" data-inema-meter-frac="">0 de 6</div>
+<div aria-label="Progresso do módulo 1.1" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter bg-dark-800/50 rounded-lg p-3 border border-dark-600" data-ARCKHÉ-meter="modulo:1-1" role="progressbar">
+<div class="text-xl font-bold text-emerald-400" data-ARCKHÉ-meter-pct="">0%</div><div class="text-xs text-neutral-400" data-ARCKHÉ-meter-frac="">0 de 6</div>
 </div>
 </div>
 </div>
 </header>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-inema-module="1-1" data-inema-track="1" id="conteudo">
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHÉ-module="1-1" data-ARCKHÉ-track="1" id="conteudo">
 <div class="lg:grid lg:grid-cols-[210px_1fr] lg:gap-10">
 <!-- TOC sticky + scrollspy -->
-<nav aria-label="Índice da página" class="hidden lg:block sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-inema-section-counter="">1 de 6</span></p>
+<nav aria-label="Índice da página" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-ARCKHÉ-section-counter="">1 de 6</span></p>
 <ol class="space-y-1.5 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Por que um modelo só tem teto</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-2">2. As 2 perguntas</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-3">3. Maestro, especialistas, fusor</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Mixture of experts como 1 API</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-5">5. Você já orquestra</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-6">6. O custo escondido</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Por que um modelo só tem teto</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-2">2. As 2 perguntas</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-3">3. Maestro, especialistas, fusor</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Mixture of experts como 1 API</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-5">5. Você já orquestra</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-6">6. O custo escondido</a></li>
 </ol>
 </nav>
 <div>
 <!-- ===== TÓPICO 1 ===== -->
-<section class="mb-16 scroll-mt-24" data-inema-topic="modulo-1-1#topico-1" id="topico-1">
+<section class="mb-16 scroll-mt-24" data-ARCKHÉ-topic="modulo-1-1#topico-1" id="topico-1">
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🤖 Por que um modelo só tem teto</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
 </div>
-<div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t1-p1">Antes de juntar vários modelos, vale entender o que é <strong class="text-emerald-400">um</strong>. Uma LLM (Large Language Model) é o tipo de IA que roda atrás do ChatGPT e do Claude: recebe texto e devolve texto, prevendo a próxima palavra com base em tudo que leu no treino. Cada modelo tem um perfil — um é melhor em código, outro em escrita, outro em raciocínio longo.</p>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t1-p2">A consequência: <strong>nenhum modelo é o melhor em tudo</strong>. Existe um "teto" para cada um. A aposta da orquestraçêo é que, se você combinar o melhor de cada um, talvez passe do teto que qualquer modelo alcançaria sozinho. Talvez. O curso inteiro é sobre testar esse "talvez".</p>
+<div class="ARCKHÉ-prose">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t1-p1">Antes de juntar vários modelos, vale entender o que é <strong class="text-emerald-400">um</strong>. Uma LLM (Large Language Model) é o tipo de IA que roda atrás do ChatGPT e do Claude: recebe texto e devolve texto, prevendo a próxima palavra com base em tudo que leu no treino. Cada modelo tem um perfil — um é melhor em código, outro em escrita, outro em raciocínio longo.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t1-p2">A consequência: <strong>nenhum modelo é o melhor em tudo</strong>. Existe um "teto" para cada um. A aposta da orquestraçêo é que, se você combinar o melhor de cada um, talvez passe do teto que qualquer modelo alcançaria sozinho. Talvez. O curso inteiro é sobre testar esse "talvez".</p>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🆕</span> Novo aqui? Três termos</h3>
@@ -243,23 +243,23 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold text-sm mb-1">A promessa</div><div class="text-xs text-neutral-400">combinar para passar do teto</div></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
 <!-- ===== TÓPICO 2 ===== -->
-<section class="mb-16 scroll-mt-24" data-inema-topic="modulo-1-1#topico-2" id="topico-2">
+<section class="mb-16 scroll-mt-24" data-ARCKHÉ-topic="modulo-1-1#topico-2" id="topico-2">
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">❓ As 2 perguntas que definem tudo</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
 </div>
-<div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t2-p1">Existe um jeito simples de enxergar qualquer sistema multi-LLM, por mais complexo que pareça. Ele responde a <strong class="text-emerald-400">duas perguntas</strong>, e só. Se você consegue respondê-las para um sistema, você entendeu o sistema.</p>
+<div class="ARCKHÉ-prose">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t2-p1">Existe um jeito simples de enxergar qualquer sistema multi-LLM, por mais complexo que pareça. Ele responde a <strong class="text-emerald-400">duas perguntas</strong>, e só. Se você consegue respondê-las para um sistema, você entendeu o sistema.</p>
 </div>
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="Orquestraçêo é a soma de duas perguntas: quem faz cada parte mais como as respostas se combinam" class="w-full h-auto" role="img" viewbox="0 0 1000 190">
@@ -291,22 +291,22 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold text-sm mb-1">Agregaçêo</div><div class="text-xs text-neutral-400">juntar de volta</div></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
 <!-- ===== TÓPICO 3 ===== -->
-<section class="mb-16 scroll-mt-24" data-inema-topic="modulo-1-1#topico-3" id="topico-3">
+<section class="mb-16 scroll-mt-24" data-ARCKHÉ-topic="modulo-1-1#topico-3" id="topico-3">
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🎼 Maestro, especialistas e fusor</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
 </div>
-<div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t3-p1">Toda orquestraçêo tem três papéis. O <strong class="text-emerald-400">maestro</strong> (ou "conductor") lê o pedido e reparte. Os <strong class="text-emerald-400">especialistas</strong> sêo os modelos que executam cada parte. E o <strong class="text-emerald-400">fusor</strong> junta as respostas num resultado só. Reconhecer esses três papéis deixa qualquer sistema "mágico" legível.</p>
+<div class="ARCKHÉ-prose">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t3-p1">Toda orquestraçêo tem três papéis. O <strong class="text-emerald-400">maestro</strong> (ou "conductor") lê o pedido e reparte. Os <strong class="text-emerald-400">especialistas</strong> sêo os modelos que executam cada parte. E o <strong class="text-emerald-400">fusor</strong> junta as respostas num resultado só. Reconhecer esses três papéis deixa qualquer sistema "mágico" legível.</p>
 </div>
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="O maestro dispara vários modelos especialistas em paralelo, e um fusor converge tudo num resultado" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
@@ -369,22 +369,22 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold text-sm mb-1">Pipeline</div><div class="text-xs text-neutral-400">os três em sequência</div></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
 <!-- ===== TÓPICO 4 ===== -->
-<section class="mb-16 scroll-mt-24" data-inema-topic="modulo-1-1#topico-4" id="topico-4">
+<section class="mb-16 scroll-mt-24" data-ARCKHÉ-topic="modulo-1-1#topico-4" id="topico-4">
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">📦 "Mixture of experts" como 1 API</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
 </div>
-<div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t4-p1">"Mixture of experts" é a ideia de manter vários especialistas e chamar o certo para cada caso. O pulo do gato comercial é <strong class="text-emerald-400">empacotar isso atrás de uma única API</strong>: você bate em um endereço só, manda seu pedido, e todo o time roda escondido. Por fora parece um modelo; por dentro é uma orquestra.</p>
+<div class="ARCKHÉ-prose">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t4-p1">"Mixture of experts" é a ideia de manter vários especialistas e chamar o certo para cada caso. O pulo do gato comercial é <strong class="text-emerald-400">empacotar isso atrás de uma única API</strong>: você bate em um endereço só, manda seu pedido, e todo o time roda escondido. Por fora parece um modelo; por dentro é uma orquestra.</p>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">📊</span> O que "1 API" esconde</h3>
@@ -420,22 +420,22 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold text-sm mb-1">Time escondido</div><div class="text-xs text-neutral-400">você paga por ele</div></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
 <!-- ===== TÓPICO 5 ===== -->
-<section class="mb-16 scroll-mt-24" data-inema-topic="modulo-1-1#topico-5" id="topico-5">
+<section class="mb-16 scroll-mt-24" data-ARCKHÉ-topic="modulo-1-1#topico-5" id="topico-5">
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🛠️ Você já orquestra (e nem percebe)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
 </div>
-<div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t5-p1">Orquestraçêo nêo é exótica. Quando o Claude Code abre <strong class="text-emerald-400">sub-agents</strong> (workers que podem rodar modelos diferentes — haiku, sonnet, opus) e reparte um plano entre eles, está orquestrando: um maestro divide, vários executam em paralelo, um junta. A diferença para o Fugu é só <em>quem decide</em> e se cruza providers.</p>
+<div class="ARCKHÉ-prose">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t5-p1">Orquestraçêo nêo é exótica. Quando o Claude Code abre <strong class="text-emerald-400">sub-agents</strong> (workers que podem rodar modelos diferentes — haiku, sonnet, opus) e reparte um plano entre eles, está orquestrando: um maestro divide, vários executam em paralelo, um junta. A diferença para o Fugu é só <em>quem decide</em> e se cruza providers.</p>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Pratique: orquestre você mesmo</h3>
@@ -455,22 +455,22 @@ Arquivo: &lt;caminho/do/seu/arquivo&gt;</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold text-sm mb-1">Intra-provider</div><div class="text-xs text-neutral-400">tudo num vendor</div></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
 <!-- ===== TÓPICO 6 ===== -->
-<section class="mb-16 scroll-mt-24" data-inema-topic="modulo-1-1#topico-6" id="topico-6">
+<section class="mb-16 scroll-mt-24" data-ARCKHÉ-topic="modulo-1-1#topico-6" id="topico-6">
 <div class="flex items-center justify-between gap-3 mb-6 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">🧾 O custo escondido da orquestraçêo</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
 </div>
-<div class="inema-prose">
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t6-p1">Aqui está o contrapeso que fecha (ou nêo) a conta. Cada especialista que o maestro chama <strong class="text-emerald-400">lê e escreve tokens</strong> — e você paga por todos. Some a isso a espera: contratar, rodar e fundir o time leva muito mais tempo que um modelo respondendo direto. Mais modelos = mais conta e mais relógio.</p>
+<div class="ARCKHÉ-prose">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t6-p1">Aqui está o contrapeso que fecha (ou nêo) a conta. Cada especialista que o maestro chama <strong class="text-emerald-400">lê e escreve tokens</strong> — e você paga por todos. Some a isso a espera: contratar, rodar e fundir o time leva muito mais tempo que um modelo respondendo direto. Mais modelos = mais conta e mais relógio.</p>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">📊</span> Um aperitivo dos números (Trilha 2)</h3>
@@ -492,18 +492,18 @@ Arquivo: &lt;caminho/do/seu/arquivo&gt;</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold text-sm mb-1">Custo × benefício</div><div class="text-xs text-neutral-400">a pergunta final</div></div>
 </div>
 <!-- Checagem leve opcional -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-1-1#q1">
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-1-1#q1">
 <p class="font-medium mb-4">Recuperaçêo rápida (opcional): orquestrar é responder a duas perguntas. Quais?</p>
-<div class="inema-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">Qual modelo é o mais inteligente / qual é o mais barato</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">Quem faz cada parte / como as respostas se combinam</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Quanto custa / quanto demora</button>
+<div class="ARCKHÉ-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Qual modelo é o mais inteligente / qual é o mais barato</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Quem faz cada parte / como as respostas se combinam</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Quanto custa / quanto demora</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-8">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
@@ -533,7 +533,7 @@ Arquivo: &lt;caminho/do/seu/arquivo&gt;</pre>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>LLMs Orquestradas — Módulo 1.1 · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a></p>
+<p>LLMs Orquestradas — Módulo 1.1 · <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p>
 </div>
 </footer>
 <script>
@@ -556,7 +556,7 @@ Arquivo: &lt;caminho/do/seu/arquivo&gt;</pre>
       themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
         html.classList.toggle('dark', nowDark);
-        if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', nowDark ? 'inema-dark' : 'claro'); } else { localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
+        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); } else { localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         sync();
       });
     })();
@@ -566,10 +566,10 @@ Arquivo: &lt;caminho/do/seu/arquivo&gt;</pre>
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
     window.addEventListener('DOMContentLoaded', function () {
-      if (window.INEMA && INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-1-1#q1', {
+      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-1-1#q1', {
           answer: 1,
           explain: {
             0: 'Essa é a pergunta de unit economics (Trilha 3), nêo a definiçêo de orquestrar.',

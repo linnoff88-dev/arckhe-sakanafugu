@@ -3,7 +3,7 @@
 Foco (trava do usuário): **mostrar uma nova forma de ter múltiplas LLMs orquestradas.**
 Fugu Ultra e OpenRouter Fusion entram como os DOIS exemplos concretos do padrêo.
 
-- courseId (`<meta name="inema-course">` + manifesto `course`): **llms-orquestradas**
+- courseId (`<meta name="ARCKHÉ-course">` + manifesto `course`): **llms-orquestradas**
 - Emoji do curso: 🐟  (Sakana = peixe; "vários peixinhos → um peixe maior")
 - Título: **LLMs Orquestradas**
 - Subtítulo: "A nova forma de rodar vários modelos de IA juntos — do conceito ao Fugu e ao Fusion"
